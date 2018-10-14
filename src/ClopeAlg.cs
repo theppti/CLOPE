@@ -13,7 +13,7 @@ namespace WindowsFormsCLOPE
         public static double DeltaAdd(Claster<T> cluster, Transaction<T> t, double r)
         {
             var res1 = DeltaAdd1(cluster, t, r);
-            var res2 = DeltaAdd2(cluster, t, r);
+            //var res2 = DeltaAdd2(cluster, t, r);
             return res1;
         }
         /// <summary>
@@ -65,7 +65,6 @@ namespace WindowsFormsCLOPE
 
             foreach (var item in t.SetOfObejct.Where(x => cluster.Occ(x) == 1))
             {
-                //if (cluster.Occ(item) == 1)
                 widthNew--;
             }
 
@@ -173,9 +172,8 @@ namespace WindowsFormsCLOPE
 
                     var deltaremove = DeltaRemove(current_claster, transaction, r);
 
-                    max_deltaadd.Reset();// = new SearchValues<T>(null, 0); // ициниализация из образца
+                    max_deltaadd.Reset();
 
-                    //foreach (var claster in res .Except(new Claster<T>[] { current_claster }) )
                     for (int i = 0; i < res.Count; i++)
                     {
                         claster_for = res[i];

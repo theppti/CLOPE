@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsCLOPE
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         ClastersSet<int> clasterset;
         TransactionReader treader;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }

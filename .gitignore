@@ -1,0 +1,7 @@
+
+*.cache
+.vs/WindowsFormsCLOPE/v15/Server/sqlite3/storage.ide-shm
+*.lock
+*.ide-wal
+*.ide
+obj\*.*
